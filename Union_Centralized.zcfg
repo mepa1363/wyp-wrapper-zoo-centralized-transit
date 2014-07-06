@@ -1,0 +1,44 @@
+[Union_Centralized]
+ Title = Union WPS Demo.
+ processVersion = 2
+ storeSupported = true
+ statusSupported = true
+ serviceProvider = UnionService_Centralized
+ serviceType = Python
+ <MetaData>
+   title = Union WPS Demo
+ </MetaData>
+ <DataInputs>
+[WalkshedCollection]
+   Title = waklshed polygons
+   minOccurs = 1
+   maxOccurs = 1
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+ </DataInputs>
+ <DataOutputs>
+ [UnionResult]
+   Title = Union result
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+ </DataOutputs>

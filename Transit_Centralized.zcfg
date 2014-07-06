@@ -1,0 +1,124 @@
+[Transit_Centralized]
+ Title = Transit WPS Demo.
+ processVersion = 2
+ storeSupported = true
+ statusSupported = true
+ serviceProvider = TransitService_Centralized
+ serviceType = Python
+ <MetaData>
+   title = Transit WPS Demo
+ </MetaData>
+ <DataInputs>
+[StartTime]
+   Title = walking start time
+   minOccurs = 1
+   maxOccurs = 1
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+[Walkshed]
+   Title = Waklshed polygon
+   minOccurs = 1
+   maxOccurs = 1
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+[WalkingTime]
+   Title = walking time period
+   minOccurs = 1
+   maxOccurs = 1
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+[WalkingSpeed]
+   Title = walking speed
+   minOccurs = 1
+   maxOccurs = 1
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+[BusWaitingTime]
+   Title = bus waiting time
+   minOccurs = 1
+   maxOccurs = 1
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+[BusRideTime]
+   Title = bus ride time
+   minOccurs = 1
+   maxOccurs = 1
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+ </DataInputs>
+ <DataOutputs>
+  [TransitResult]
+   Title = transit result
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+ </DataOutputs>

@@ -1,0 +1,44 @@
+[POI_Transit_Centralized]
+ Title = POI WPS Demo.
+ processVersion = 2
+ storeSupported = true
+ statusSupported = true
+ serviceProvider = POIService_Transit_Centralized
+ serviceType = Python
+ <MetaData>
+   title = POI WPS Demo
+ </MetaData>
+ <DataInputs>
+[Walkshed]
+   Title = Waklshed polygon
+   minOccurs = 1
+   maxOccurs = 1
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+ </DataInputs>
+ <DataOutputs>
+  [POIResult]
+   Title = POI result
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+ </DataOutputs>

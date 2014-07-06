@@ -1,0 +1,44 @@
+[Crime_Transit_Centralized]
+ Title = Crime WPS Demo.
+ processVersion = 2
+ storeSupported = true
+ statusSupported = true
+ serviceProvider = CrimeService_Transit_Centralized
+ serviceType = Python
+ <MetaData>
+   title = Crime WPS Demo
+ </MetaData>
+ <DataInputs>
+[Walkshed]
+   Title = Waklshed polygon
+   minOccurs = 1
+   maxOccurs = 1
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+ </DataInputs>
+ <DataOutputs>
+  [CrimeResult]
+   Title = Crime result
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+ </DataOutputs>

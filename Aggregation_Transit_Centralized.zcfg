@@ -1,0 +1,156 @@
+[Aggregation_Transit_Centralized]
+ Title = Walkshed WPS Demo.
+ processVersion = 2
+ storeSupported = true
+ statusSupported = true
+ serviceProvider = AggregationService_Transit_Centralized
+ serviceType = Python
+ <MetaData>
+   title = Walkshed WPS Demo
+ </MetaData>
+ <DataInputs>
+[POI]
+   Title = POI data
+   minOccurs = 1
+   maxOccurs = 1
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+[Crime]
+   Title = Crime data
+   minOccurs = 1
+   maxOccurs = 1
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+[Transit]
+   Title = Transit data
+   minOccurs = 1
+   maxOccurs = 1
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+[StartPoint]
+   Title = walking start point
+   minOccurs = 1
+   maxOccurs = 1
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+[WalkshedCollection]
+   Title = walkshed polygons
+   minOccurs = 1
+   maxOccurs = 1
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+[WalkshedUnion]
+   Title = a merged polygon
+   minOccurs = 1
+   maxOccurs = 1
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+[DistanceDecayFunction]
+   Title = use distance decay function or not
+   minOccurs = 1
+   maxOccurs = 1
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+[WalkingTimePeriod]
+   Title = walking time period
+   minOccurs = 1
+   maxOccurs = 1
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+ </DataInputs>
+ <DataOutputs>
+[AggregationResult]
+   Title = Aggregated result
+   <MetaData>
+    title = Demo
+   </MetaData>
+   <LiteralData>
+    DataType = string
+    <Default>
+     UOM = meter
+    </Default>
+    <Supported>
+     UOM = meter
+    </Supported>
+   </LiteralData>
+ </DataOutputs>
